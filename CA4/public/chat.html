@@ -4,10 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Socket.io simple chat</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/demo.css" />
+    
   </head>
   <body>
-    <div class="sidenav">
+      <nav class= "navbar navbar-expand-sm bg-dark navbar-dark">
+               <div class ="container">
+                   <a href ="index.html" class ="navbar-brand">Portfolio</a>
+                   
+                   <button class="navbar-toggler" 
+                           type ="button"
+                           data-toggle="collapse" 
+                           data-target="#navbar">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   
+                <div class = "collapse navbar-collapse" id="navbar">
+                    <ul class= "navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href = "about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href = "chat.html" class="nav-link">Chat Feature</a>
+                        </li>
+                        
+                    </ul>
+                   </div>
+                   
+                </div>
+            </nav>
+      
+      
+ <div class="sidenav ">
         <div class="inbox__people">
             <h4>Active users</h4>
           </div>
@@ -32,7 +61,10 @@
             </button>
           </form>
       </div>
-
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/client.js"></script>
   </body>

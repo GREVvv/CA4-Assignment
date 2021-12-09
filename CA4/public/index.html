@@ -4,18 +4,122 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home page</title>
+        <title>Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/demo.css">
+        
+       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/demo.css"> 
     </head>
     <body>
-        <p>This is the home page</p>
-
-        <p><a href = "chat.html">Chat</a></p>
         
-        <script src="js/client.js" async defer></script>
-     
+ <!-- top navigation bar-->
+           <nav class= "navbar navbar-expand-sm bg-dark navbar-dark">
+               <div class ="container">
+                   <a href="index.html" class ="navbar-brand">Portfolio</a>
+                   
+                   <button class="navbar-toggler" 
+                           type ="button"
+                           data-toggle="collapse" 
+                           data-target="#navbar">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   
+                <div class = "collapse navbar-collapse" id="navbar">
+                    <ul class= "navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href = "about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href = "chat.html" class="nav-link">Chat Feature</a>
+                        </li>
+                        
+                    </ul>
+                   </div>
+                   
+                </div>
+            </nav>
+            
+           
+            
+                           
+                        
+                        
+        <section class="bg_index"> 
+            <div class="bg-image shadow-2-strong">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                   <div class="text-white">
+                        <h1 class="banner_text">Aidan Grevemberg</h1>
+                        <h2 class ="banner_text"> Portfolio</h2>
+           </div>
+        </div>
+      </div>
+    </section> 
+        
+        <section class="text-white text-center p-5">
+            
+                
+           
+            <p> Hello there! My name is Aidan Grevemberg and <br>I am currently a full time 
+            Computer <br>Science Student at the University of Aberdeen.<br>
+                </p>
+            <p>Asside from my passion for coding and<br> technology, I deeply enjoy playing music 
+            as well <br>taking care of my health through sport.</p>
+            
+        
+        </section>
+<section>   
 
+
+      <div class="container-fluid p-10 m-10">
+  <div class="row">
+    <!--Left column-->
+    <div class="col-sm-6">
+      <div class="text-white text-center">
+          
+              
+          
+           <u><h3>Want to learn more?</h3></u>
+          <p> Click here to learn more about myself:  </p>
+          <a class ="btn btn-primary btn-md btn-outline-dark" href="about.html" role="button"> ABOUT</a>
+      </div>
+         
+      </div>
+       
+      
+      
+      
+
+
+<!--Right column-->
+    <div class="col-sm-6">
+      <div class="text-white text-center ">
+            <u><h3> Hobbies</h3></u>
+          <p>Check out my newly implemented multi-user
+              chat feature: </p>
+          <a class ="btn btn-primary btn-md btn-outline-dark" href="chat.html" role="button">CHAT</a>
+        </div>
+      </div>
+     </div>
+   </div>
+</section>  
+
+      
+      
+             
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/client.js" async defer></script>
     </body>
+    
+    <footer class="p-5 text-white text-center position-relative">
+        <div class="container">
+            <p class="p-1">Photo by <a href="https://safebooru.org/index.php?page=post&s=view&id=2818693"> gelbooru</a> on <a href="https://safebooru.org/index.php?page=post&s=view&id=2818693">Safebooru</a>
+</p>
+           
+        </div>
+         
+        </footer>
 </html>
