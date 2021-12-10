@@ -1,4 +1,4 @@
-//required for front end communication between client and server
+  //required for front end communication between client and server
 
 const socket = io();
 
@@ -42,19 +42,35 @@ const addToUsersBox = function (userName) {
     inboxPeople.innerHTML += userBox;
 };
 
+
+
+
+
+
+
+
 //call 
 newUserConnected();
+
 
 //when a new user event is detected
 socket.on("new user", function (data) {
   data.map(function (user) {
-          return addToUsersBox(user);
+      return addToUsersBox(user);
+      
       });
+});
+socket.on("new user", function (userName) {
+   alert(userName + " has joined");
+ 
+      
+  
 });
 
 //when a user leaves
 socket.on("user disconnected", function (userName) {
   document.querySelector(`.${userName}-userlist`).remove();
+    alert(userName + " has left the chat");
 });
 
 
@@ -69,21 +85,23 @@ const addNewMessage = ({ user, message }) => {
   const receivedMsg = `
   <div class="incoming__message">
     <div class="received__message">
-      <p>${message}</p>
-      <div class="message__info">
-        <span class="message__author">${user}</span>
+      <div class="message__info">                  
+        <span class="message__author">${user + " at"}</span> 
         <span class="time_date">${formattedTime}</span>
-      </div>
+       </div>
+      <p>${message}</p>
     </div>
   </div>`;
 
   const myMsg = `
   <div class="outgoing__message">
     <div class="sent__message">
-      <p>${message}</p>
-      <div class="message__info">
+     <div class="message__info">
+        <span class="message__author">${"You" + " at"}</span> 
         <span class="time_date">${formattedTime}</span>
-      </div>
+       </div>
+      <p>${message}</p>
+     
     </div>
   </div>`;
 

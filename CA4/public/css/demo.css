@@ -13,9 +13,9 @@ body {
   .sidenav {
     height: 100%;
     width: 200px;
-    position: relative;
-    z-index: 1;
-    top: 0;
+    position: absolute;
+   
+    
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -66,7 +66,7 @@ body {
 }
 
 
-
+/* banner text style*/   
 .banner_text{
     color: white;
     font-stretch: extra-expanded;
@@ -93,6 +93,12 @@ h3{
     text-shadow: 3px 5px 10px #000;
     color: white;
 }
+h4{
+    font-family: 'FreeMono', monospace;
+    text-shadow: 3px 5px 10px #000;
+     color: white;
+    
+}
 
 
 .main_text{
@@ -108,7 +114,7 @@ h3{
     
    
 }
-
+/*Background implemntation style for index page*/
 .bg_index{
   background: url("back.gif");
   background-position: center;
@@ -117,6 +123,7 @@ h3{
   height: 500px;
   position:relative;
 }
+/*Background implementation style for about page*/
 .bg_about{
   background: url("back_2.gif");
   background-position: center;
@@ -128,7 +135,7 @@ h3{
 
 
 
-
+/*CCS style to add gradiant line in the bottom position of the about page's banner background*/
 .bg_about:before,
 .bg_about:after{
     content:'';
@@ -142,17 +149,10 @@ h3{
    
     
 }
+
+/*Height of the mask attribute (i.e the shadow effect over the background image) */
 .mask{
     height:500px;
-}
-
-.h-text{
-  padding:40px;
-  font-size: 30px;
-  font-family: Trebuchet MS, Fantasy;
- 
- 
-  
 }
 p{
     color: white;
@@ -161,27 +161,20 @@ p{
     position: relative;
     padding: 10px;
     font-family: 'FreeMono', monospace;
-    text-align:center;
+ 
     letter-spacing: 0.100em;
     
 }
 ul{
-     color: white;
-   
+    color: white;
     font-weight: 200;
-    
-    
     padding: 10px;
     font-family: 'FreeMono', monospace;
-    
     letter-spacing: 0.100em;
     
+    
+    
 }
-
-
-
-
-
 
 .chat_button{
     

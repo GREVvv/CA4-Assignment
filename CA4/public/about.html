@@ -14,38 +14,33 @@
     </head>
     <body>
         
- <!-- top navigation bar-->
-           <nav class= "navbar navbar-expand-sm bg-dark navbar-dark">
+   <!-- top navigation bar-->
+           <nav class= "navbar navbar-expand-sm bg-dark navbar-dark">    <!-- Nav bar turns into drop down menu button when screen dimensions change-->
                <div class ="container">
-                   <a href="index.html" class="navbar-brand">Portfolio</a>
-                   
-                   <button class="navbar-toggler" 
+                   <a href="index.html" class ="navbar-brand">Portfolio</a> 
+                       <button class="navbar-toggler" 
                            type ="button"
                            data-toggle="collapse" 
                            data-target="#navbar">
                        <span class="navbar-toggler-icon"></span>
                    </button>
-                   
-                <div class = "collapse navbar-collapse" id="navbar">
-                    <ul class= "navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href = "about.html" class="nav-link">About</a>
+        <div class = "collapse navbar-collapse" id="navbar">  <!-- Nav bar items --> 
+                  <ul class= "navbar-nav ms-auto">
+                     <li class="nav-item">
+                          <a href = "about.html" class="nav-link">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a href = "chat.html" class="nav-link">Chat Feature</a>
-                        </li>
-                        
-                    </ul>
+                           <li class="nav-item">
+                                <a href = "chat.html" class="nav-link">Chat Feature</a>
+                            </li>
+                           </ul>
+                       </div>
                    </div>
-                   
-                </div>
-            </nav>
-        
+                </nav>
 
             
            
             
-                           
+    <!--Main information section -->                       
         <section class="bg_about"> 
             <div class="bg-image shadow-2-strong">
                 <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
@@ -68,90 +63,69 @@
            </p>
         </section>
         
+<!--Bootstap card layout -->        
 <section>
          <div class="container-fluid p-10 m-10">
-  <div class="row">
-    <!--Left column-->
-    <div class="col-sm-4">
-      <div class="text-white text-center">
-          <u><h3>Hobbies</h3></u>
-         <ul>
-              <li>Video Games</li>
-              <li>Working out at the gym (3-4 times week)</li>
-              <li>Music</li>
-              <li>Meeting up with friends</li>
-              <li>The Outdoors</li>
-            </ul>
-      </div>
-         
-      </div>
-       
+              <div class="row">
       
-      
-      
+                <!--Left column-->
+                   <div class="col-sm-4">
+                      <div class="text-white text-center">
+                          <h3><u>Hobbies</u></h3>
+                             <ul>
+                              <li>Video Games</li>
+                              <li>Working out at the gym (3-4 times week)</li>
+                              <li>Athletics</li>
+                              <li>Music</li>
+                              <li>Meeting up with friends</li>
+                              <li>The Outdoors</li>
+                              
+                            </ul>
+                          </div>
+                        </div>
 
-
-<!--Right column-->
-    <div class="col-sm-4">
-      <div class="text-white text-center ">
-            <u><h3>Studies</h3></u>
-          <ul>
-              <li>Degree: MSci Computer Science with Industrial Placement</li>
-              <li>Programming Languages: Main- Java<br> Secondary- C++,Python, HTML, CSS, javascript</li>
-              <li>Future Job: Games Developer</li>
-              
-            </ul>
-          
-          
-             
- </div>
-      </div>
+      <!--Middle column-->
+                <div class="col-sm-4">
+                  <div class="text-white text-center ">
+                        <h3><u>Studies</u></h3>
+                      <ul>
+                          <li>Degree: MSci Computer Science with Industrial Placement</li>
+                          <li>Programming Languages: Main- Java<br> Secondary- C++,Python, HTML, CSS, javascript</li>
+                          <li>Future Job: Games Developer</li>
+                      </ul>
+                    </div>
+                  </div>
     
- 
-        
-           <div class="col-sm-4">
-      <div class="text-white text-center ">
-            <u><h3>General Inforamtion</h3></u>
-            <ul>
-              <li>Full Name: Aidan Akira Grevemberg</li>
-              <li>Date of Birth: 21/10/2002</li>
-              <li>Place of Birth: Bonn, Germany</li>
-              <li>Locaction: Aberdeen</li>
-              
-            </ul>
-          
-          
-             
-        
-        </div>
-      </div>
-  </div>
-   </div>
-</section> 
 
+      <!--Right Column-->
+               <div class="col-sm-4">
+                  <div class="text-white text-center ">
+                   <h3> <u>General Inforamtion</u></h3>
+                        <ul>
+                          <li>Full Name: Aidan Akira Grevemberg</li>
+                          <li>Date of Birth: 21/10/2002</li>
+                          <li>Place of Birth: Bonn, Germany</li>
+                          <li>Locaction: Aberdeen</li>
+                      </ul>
+                   </div>
+                  </div>
+                  </div>
+               </div>
+            </section> 
+
+    <footer> 
+        <div class="p-5 text-white text-center position-relative">
+        <div class="container">
+            <p class="p-1">Photo by <a href="https://safebooru.org/index.php?page=post&s=view&id=2818693"> gelbooru</a> on <a href="https://safebooru.org/index.php?page=post&s=view&id=2818693">Safebooru</a>
+            </p>
+          </div>
+        </div>
+        </footer>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+ <!--Bootstrap plugins-->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="js/client.js" async defer></script>
     </body>
-    
-    <footer class="p-5 text-white text-center position-relative">
-        <div class="container">
-            <p class="p-1">Photo by <a href="https://safebooru.org/index.php?page=post&s=view&id=2818693"> gelbooru</a> on <a href="https://safebooru.org/index.php?page=post&s=view&id=2818693">Safebooru</a>
-</p>
-           
-        </div>
-         
-        </footer>
 </html>
